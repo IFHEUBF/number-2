@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Love Letter</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8e6e0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .cover, .letter {
+            max-width: 600px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+            position: absolute;
+            transition: transform 0.5s ease-in-out;
+        }
+        .cover {
+            cursor: pointer;
+        }
+        .cover h1 {
+            font-size: 2em;
+            color: #c94747;
+        }
+        .letter {
+            display: none;
+        }
+        .letter h1 {
+            font-size: 2em;
+            color: #c94747;
+            margin-bottom: 10px;
+        }
+        .letter p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .signature {
+            margin-top: 20px;
+            font-size: 1em;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="cover" id="cover">
+        <h1>To:💕💕 Rhea💕💕 </h1>
+    </div>
+    <div class="letter" id="letter">
+        <h1>My Dearest Reeee babyy,</h1>
+        <p>
+            💕 I Want You, not for your body, or money, or your looks, not for lust,
+            or to play with your heart, i'm not bored either,
+             and its not to lift my ego infront of my friends or to show off,
+              i'm not with you cause i cant get anyone, or to have  someone to text everyday.
+              i want you because, youre so fucking amazing, you're literally perfect in my eyes.
+              you make my day so much better and i've become happier when i'm with my baby. 
+              you care about me the way no one else does. i love you the most,i hope you know that
+               and
+                i'd never cheat on you, i'd never,
+                 cause you're the best thing that's happened to me
+                  and 
+                  i dont want to lose you (so stay forever)
+                    the reasons i love you: I love your voice,
+                     i love your smile, i love when u look at me with those puppy eyes,
+                      I love your short and wavy hair , I love the way we just laugh randomly on call and esp when u stare at eachother,
+                       i love when u make me laugh, i love how u find comfort with me and you trust  me,
+                        i love how random you are especially on call you start singing randomly or meowing. 
+                        I love that no matter what i've put you through you never gave up on US on me. 
+                        I love being with you, i love that youre still here even though you've been thru so much,
+                         I love you and I'd never stop loving you cause YOU ARE MY EVERYTHING REE, 
+                         you're everything I have ever wanted in a person. 💕
+        </p>
+        <p>
+            With all my love,<br>
+            Your boyfriend
+        </p>
+        <div class="signature">
+            &hearts; Forever Yours &hearts;
+        </div>
+    </div>
+    <script>
+        const cover = document.getElementById('cover');
+        const letter = document.getElementById('letter');
+
+        cover.addEventListener('click', () => {
+            cover.style.display = 'none';
+            letter.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
